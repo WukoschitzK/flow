@@ -1,0 +1,129 @@
+.Form {
+    @apply shadow p-6 rounded mx-auto max-w-lg;
+}
+
+.InputField {
+    @apply rounded p-2 border border-borderGrey;
+}
+
+.textarea {
+    height:210px;
+}
+
+label {
+    @apply text-sm;
+}
+
+::placeholder {
+    @apply text-sm;
+}
+
+// vue multiselect styling
+.multiselect__tags {
+    min-height: 52px;
+    @apply rounded p-2 border border-borderGrey;
+}
+
+.multiselect__placeholder {
+    margin-bottom: 0;
+    padding-top: 6px;
+    font-weight: 400;
+    @apply text-sm;
+}
+
+.multiselect__select {
+    height: 52px;
+}
+
+.multiselect__tag {
+    @apply bg-pink-main;
+}
+
+.multiselect__option--selected.multiselect__option--highlight:after {
+    height: 40px;
+    @apply bg-pink-main;
+}
+
+.multiselect__tag-icon:after {
+    @apply text-white;
+}
+
+
+.multiselect__tag-icon:hover, 
+.multiselect__tag-icon:focus {
+    @apply bg-pink-hover;
+}
+
+.multiselect__option--highlight,
+.multiselect__option--selected.multiselect__option--highlight {
+    @apply text-pink-main bg-white rounded;
+}
+
+.multiselect--active {
+    @apply bg-pink-main rounded;
+}
+
+.multiselect__input {
+    padding-top: 9px;
+}
+
+.multiselect__option--highlight:after {
+    @apply text-pink-main bg-white rounded;  
+}
+
+select:required:invalid {
+    color: #A3A3A3 !important;
+    font-size: 0.9rem;
+
+}
+option[value=""][disabled] {
+    display: none;
+}
+option {
+    color: black;
+}
+
+input::placeholder {
+    color: #A3A3A3 !important;
+    font-size: 0.9rem;
+}
+
+//arrow in dropdown
+
+select {
+    /* styling */
+    //background-color: white;
+    //border: thin solid blue;
+    //border-radius: 4px;
+    //display: inline-block;
+    //line-height: 1.5em;
+    //padding: 0.5em 3.5em 0.5em 1em;
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+select.arrow-icon {
+    background-image:
+            linear-gradient(45deg, transparent 50%, gray 50%),
+            linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            calc(100% - 2.5em) 0.5em;
+    background-size:
+            5px 5px,
+            5px 5px,
+            1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}

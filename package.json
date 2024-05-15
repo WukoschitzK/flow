@@ -1,0 +1,64 @@
+{
+  "name": "flow.",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.4.3",
+    "@vuelidate/core": "^2.0.0-alpha.33",
+    "@vuelidate/validators": "^2.0.0-alpha.26",
+    "axios": "^0.23.0",
+    "core-js": "^3.6.5",
+    "express": "^4.17.2",
+    "sass": "^1.43.4",
+    "serve-static": "^1.14.2",
+    "v-video-embed": "^1.0.8",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.3.7",
+    "vue-moment": "^4.1.0",
+    "vue-multiselect": "^2.1.6",
+    "vue-router": "^3.5.3",
+    "vue-tailwind": "^2.5.0",
+    "vue-toasted": "^1.1.28",
+    "vue-vimeo-player": "^0.2.2",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "postcss": "^7.0.39",
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue-template-compiler": "2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
